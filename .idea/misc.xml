@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EmacsSettings">
+    <option name="emacsPath" value="/usr/bin/emacs" />
+  </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="zy" />
+    <dictionary name="zhangyao" />
+  </component>
+  <component name="SmartyConfiguration" left_delimiter="{%" right_delimiter="%}" />
+</project>
