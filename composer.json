@@ -1,0 +1,37 @@
+{
+  "name": "Hibiscus94/WoodPHP",
+  "description": "WoodPHP PHP FrameWork",
+  "keywords": [
+    "php",
+    "framework",
+    "woodphp"
+  ],
+  "homepage": "https://github.com/Hibiscus94/WoodPHP",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0",
+    "filp/whoops": "^v2.1.2",
+    "monolog/monolog": "^v1.23.0",
+    "catfan/medoo": "^v1.4.5",
+    "twig/twig": "^v2.4.4",
+    "symfony/var-dumper": "^v3.3.6"
+  },
+  "authors": [
+    {
+      "name": "Hibiscus94",
+      "email": "mineeing@gmail.com",
+      "homepage": "https://github.com/Hibiscus94"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "./core/WoodPHP.php"
+    ],
+    "psr-4": {
+      "core\\lib\\": [
+        "./core/lib/"
+      ]
+    }
+  }
+}
