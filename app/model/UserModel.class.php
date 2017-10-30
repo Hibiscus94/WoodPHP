@@ -2,6 +2,7 @@
 
 namespace app\model;
 
+use \Medoo\Medoo;
 /**
  * ,__,
  * (oo)_____
@@ -15,10 +16,11 @@ namespace app\model;
  */
 
 
-class UserModel
+class UserModel extends Medoo
 {
-    public function index()
+    public function index($inPath)
     {
+        dump($inPath);
         echo 'usermodel';
     }
 }

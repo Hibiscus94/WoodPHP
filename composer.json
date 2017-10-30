@@ -29,9 +29,7 @@
       "./core/WoodPHP.php"
     ],
     "psr-4": {
-      "core\\lib\\": [
-        "./core/lib/"
-      ]
+      "core\\lib\\": "./core/lib/"
     }
   }
 }

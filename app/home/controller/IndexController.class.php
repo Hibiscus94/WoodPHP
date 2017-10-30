@@ -2,6 +2,7 @@
 namespace app\home\controller;
 
 use app\model\UserModel;
+use app\service\UserService;
 
 /**
  * ,__,
@@ -26,12 +27,21 @@ use app\model\UserModel;
      {
          echo 'this is hello';
          $userModel = new UserModel();
-         $userModel->index();
+         $userModel->index($inPath);
+
+
+         $userService = new UserService();
+         echo $userService->index();
      }
 
      public function __call($name, $arguments)
      {
          echo $_GET['page'];
          echo  112;
+     }
+
+     public function call()
+     {
+         echo 'this is call';
      }
  }

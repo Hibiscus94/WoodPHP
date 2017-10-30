@@ -22,5 +22,7 @@ WoodPHP::setDefaultPage('index');
 WoodPHP::setDefaultEntry('index');
 WoodPHP::setSplitFlag('/');
 
+\core\lib\Db::setConfigFile('../app/config/db.ini.php');
+
 // 应用初始化
 WoodPHP::run();

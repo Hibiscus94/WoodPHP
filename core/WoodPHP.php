@@ -132,19 +132,21 @@ class WoodPHP
     }
 
     /**
-     * @return mixed
+     * @param $module
+     * @return bool|mixed
      */
-    public static function getModuleAlias()
+    public static function getModuleAlias($module)
     {
-        return self::$moduleAlias;
+        return isset(self::$moduleAlias[$module]) ? self::$moduleAlias[$module] : false;
     }
 
     /**
-     * @param mixed $moduleAlias
+     * @param $module
+     * @param $alias
      */
-    public static function setModuleAlias($moduleAlias)
+    public static function setModuleAlias($module,$alias)
     {
-        self::$moduleAlias = $moduleAlias;
+        self::$moduleAlias[$module] = $alias;
     }
 
 
